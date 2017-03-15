@@ -1,6 +1,6 @@
-package ArrayList
+package arrayExp
 
-func New() *ArrayList {
+func NewArrayList() *ArrayList {
 	return &ArrayList{[]Object{}}
 }
 
@@ -23,7 +23,7 @@ func (arr *ArrayList) IndexOf(obj Object) int {
 	return -1
 }
 
-func (arr *ArrayList) Add(obj *Object) {
+func (arr *ArrayList) Add(obj Object) {
 	arr.array = append(arr.array, obj)
 }
 
